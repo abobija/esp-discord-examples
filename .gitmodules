@@ -1,0 +1,3 @@
+[submodule "basic-login/components/esp-discord"]
+	path = basic-login/components/esp-discord
+	url = https://github.com/abobija/esp-discord

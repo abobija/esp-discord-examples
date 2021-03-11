@@ -2,6 +2,12 @@
 
 This repository represent examples of using [esp-discord](https://github.com/abobija/esp-discord) component for making Discord Bot on the ESP32 device.
 
+To get examples, just clone this repository with next command:
+
+```
+git clone --recursive https://github.com/abobija/esp-discord-examples.git
+```
+
 ## How to build
 
 Go inside of desired example folder and do next:

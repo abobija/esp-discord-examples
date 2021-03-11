@@ -8,6 +8,12 @@ To get examples, just clone this repository with next command:
 git clone --recursive https://github.com/abobija/esp-discord-examples.git
 ```
 
+Tu update, run:
+
+```
+git pull && git submodule foreach --recursive git pull origin main
+```
+
 ## How to build
 
 Go inside of desired example folder and do next:

@@ -4,3 +4,6 @@
 [submodule "echo/components/esp-discord"]
 	path = echo/components/esp-discord
 	url = https://github.com/abobija/esp-discord
+[submodule "check-admin/components/esp-discord"]
+	path = check-admin/components/esp-discord
+	url = https://github.com/abobija/esp-discord

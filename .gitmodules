@@ -1,3 +1,6 @@
 [submodule "basic-login/components/esp-discord"]
 	path = basic-login/components/esp-discord
 	url = https://github.com/abobija/esp-discord
+[submodule "echo/components/esp-discord"]
+	path = echo/components/esp-discord
+	url = https://github.com/abobija/esp-discord

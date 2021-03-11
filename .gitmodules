@@ -7,3 +7,6 @@
 [submodule "check-admin/components/esp-discord"]
 	path = check-admin/components/esp-discord
 	url = https://github.com/abobija/esp-discord
+[submodule "react/components/esp-discord"]
+	path = react/components/esp-discord
+	url = https://github.com/abobija/esp-discord

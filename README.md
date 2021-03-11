@@ -11,7 +11,7 @@ git clone --recursive https://github.com/abobija/esp-discord-examples.git
 Tu update, run:
 
 ```
-git pull && git submodule foreach --recursive git pull origin main
+git pull --recurse-submodules
 ```
 
 ## How to build
@@ -27,6 +27,12 @@ Go inside of desired example folder and do next:
   - `Component Config` > `Discord` > `Token` with your bot authentication token
 - Now run `idf.py build` to build the app
 - Flash and monitor app.
+
+## Development update
+
+```
+git pull && git submodule foreach --recursive git pull origin main
+```
 
 ## Author
 

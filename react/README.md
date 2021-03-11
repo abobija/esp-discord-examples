@@ -23,7 +23,6 @@ Output:
 
 ```
 I (7998) discord_bot: Bot ESP32#9421 connected
-I (28988) discord_bot: New message (dm=false, autor=abobija#5474, bot=false, channel=808419120159916042, guild=805838862
-634451014, content=Hey ESP32, are you there?)
+I (28988) discord_bot: New message (dm=false, autor=abobija#5474, bot=false, channel=808419120159916042, guild=805838862634451014, content=Hey ESP32, are you there?)
 I (31958) discord_bot: Reacted to message
 ```

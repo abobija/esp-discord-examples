@@ -1,6 +1,6 @@
-# ESP32 echo Discord bot
+# ESP32 check-admin Discord bot
 
-This is example application which represent echo [ESP32 Discord bot](https://github.com/abobija/esp-discord).
+This is example application which represent [ESP32 Discord bot](https://github.com/abobija/esp-discord) that checks if user which sends message have administrator privileges.
 
 ## Configuration steps:
 

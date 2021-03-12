@@ -1,6 +1,6 @@
 # ESP32 Discord bot download message attachment
 
-This is example application which represent echo [ESP32 Discord bot](https://github.com/abobija/esp-discord) that download attachment of received message.
+This is example application which represent [ESP32 Discord bot](https://github.com/abobija/esp-discord) that download attachment of received message.
 
 ## Configuration steps:
 

@@ -50,7 +50,7 @@ static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t 
                     ESP_LOGI(TAG, "There is no attachments in message");
                 } else {
                     for(uint8_t i = 0; i < msg->_attachments_len; i++) {
-                        ESP_LOGI(TAG, "attachment (id=%s, filename=%s, type=%s, size=%d, url=%s",
+                        ESP_LOGI(TAG, "attachment (id=%s, filename=%s, type=%s, size=%d, url=%s)",
                             msg->attachments[i]->id,
                             msg->attachments[i]->filename,
                             msg->attachments[i]->content_type,

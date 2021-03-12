@@ -10,3 +10,6 @@
 [submodule "react/components/esp-discord"]
 	path = react/components/esp-discord
 	url = https://github.com/abobija/esp-discord
+[submodule "download-attachment/components/esp-discord"]
+	path = download-attachment/components/esp-discord
+	url = https://github.com/abobija/esp-discord

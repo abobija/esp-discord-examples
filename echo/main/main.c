@@ -49,15 +49,14 @@ static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t 
                     .channel_id = msg->channel_id
                 };
 
-                esp_err_t err;
-                discord_message_t* sent_msg = discord_message_send_(bot, &echo, &err);
-
+                discord_message_t* sent_msg = NULL;
+                esp_err_t err = discord_message_send(bot, &echo, &sent_msg);
                 free(echo_content);
 
                 if(err == ESP_OK) {
                     ESP_LOGI(TAG, "Echo message successfully sent");
 
-                    if(sent_msg) { // null check because message can be sent (ESP_OK) by not returned
+                    if(sent_msg) { // null check because message can be sent but not returned
                         ESP_LOGI(TAG, "Echo message got ID #%s", sent_msg->id);
                         discord_message_free(sent_msg);
                     }

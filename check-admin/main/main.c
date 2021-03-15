@@ -43,14 +43,14 @@ static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t 
                 );
 
                 if(estr_eq(msg->content, "admin?")) {
-                    esp_err_t err;
+                    bool is_admin;
 
-                    bool is_admin = discord_member_has_permissions(
+                    esp_err_t err = discord_member_has_permissions(
                         bot,
                         msg->member,
                         msg->guild_id,
                         DISCORD_PERMISSION_ADMINISTRATOR,
-                        &err
+                        &is_admin
                     );
 
                     if(err != ESP_OK) {
@@ -65,7 +65,7 @@ static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t 
                         .content = _content
                     };
 
-                    err = discord_message_send(bot, &response);
+                    err = discord_message_send(bot, &response, NULL);
                     free(_content);
 
                     if(err != ESP_OK) {

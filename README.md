@@ -28,6 +28,10 @@ Go inside of desired example folder and do next:
 - Now run `idf.py build` to build the app
 - Flash and monitor app.
 
+## Esp-Discord demonstration video
+
+[![Discord Bots on the ESP32 ... (ESP-IDF library)](https://img.youtube.com/vi/p5qzRH2abvw/mqdefault.jpg)](https://www.youtube.com/watch?v=p5qzRH2abvw)
+
 ## Development update
 
 ```

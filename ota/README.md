@@ -25,36 +25,35 @@ For more examples please visit [esp-discord-examples](https://github.com/abobija
 Output:
 
 ```
-I (7055) discord_bot: Bot ESP32#9116 connected (session_id=2dfbe4a310a55bad9d3a5e0b0dbe212b)
-I (18505) discord_bot: New message (content=!ota status, autor=abobija#5474, bot=false, attachments_len=0, channel=826475710482350080, dm=false, guild=805838862634451014)
-I (73105) discord_bot: New message (content=!ota, autor=abobija#5474, bot=false, attachments_len=1, channel=826475710482350080, dm=false, guild=805838862634451014)
-I (73115) DISCORD: discord_ota: Checking admin permissions...
-I (73425) DISCORD: discord_ota: Gathering new firmware informations...
-I (76595) DISCORD: ota_image: Firmware versions(new=1.3, running=1.2, last_invalid=NULL)
-I (76595) DISCORD: ota_download_handler: Firmware downloading (size=895040 B)...
-I (78285) DISCORD: ota_download_handler: Downloaded 9%
-I (79875) DISCORD: ota_download_handler: Downloaded 18%
-I (81755) DISCORD: ota_download_handler: Downloaded 27%
-I (84105) DISCORD: ota_download_handler: Downloaded 36%
-I (86465) DISCORD: ota_download_handler: Downloaded 45%
-I (88735) DISCORD: ota_download_handler: Downloaded 54%
-I (91115) DISCORD: ota_download_handler: Downloaded 63%
-I (93455) DISCORD: ota_download_handler: Downloaded 72%
-I (95805) DISCORD: ota_download_handler: Downloaded 81%
-I (98215) DISCORD: ota_download_handler: Downloaded 90%
-I (100565) DISCORD: ota_download_handler: Downloaded 99%
-I (100725) DISCORD: ota_download_handler: Downloaded 100%
-I (100725) DISCORD: discord_ota: Validating...
-I (100735) esp_image: segment 0: paddr=00110020 vaddr=3f400020 size=2187ch (137340) map
-I (100785) esp_image: segment 1: paddr=001318a4 vaddr=3ffb0000 size=042b0h ( 17072)
-I (100785) esp_image: segment 2: paddr=00135b5c vaddr=40080000 size=0a4bch ( 42172)
-I (100805) esp_image: segment 3: paddr=00140020 vaddr=400d0020 size=9f160h (651616) map
-I (101015) esp_image: segment 4: paddr=001df188 vaddr=4008a4bc size=0b68ch ( 46732)
-I (101025) DISCORD: discord_ota: Mounting...
-I (101025) esp_image: segment 0: paddr=00110020 vaddr=3f400020 size=2187ch (137340) map
-I (101075) esp_image: segment 1: paddr=001318a4 vaddr=3ffb0000 size=042b0h ( 17072)
-I (101085) esp_image: segment 2: paddr=00135b5c vaddr=40080000 size=0a4bch ( 42172)
-I (101095) esp_image: segment 3: paddr=00140020 vaddr=400d0020 size=9f160h (651616) map
-I (101305) esp_image: segment 4: paddr=001df188 vaddr=4008a4bc size=0b68ch ( 46732)
-I (101345) DISCORD: discord_ota: New firmware mounted. Rebooting...
+I (548212) discord_bot: New message (content=!ota <@!824648671600967700> status, autor=abobija#5474, bot=false, attachments_len=0, channel=826475710482350080, dm=false, guild=805838862634451014)
+I (590302) discord_bot: New message (content=!ota <@!824648671600967700> update, autor=abobija#5474, bot=false, attachments_len=1, channel=826475710482350080, dm=false, guild=805838862634451014)
+I (590312) DISCORD: discord_ota: Checking admin permissions...
+I (590622) DISCORD: discord_ota: Gathering new firmware informations...
+I (593582) DISCORD: ota_image: Firmware versions(new=1.2, running=1.1, last_invalid=NULL)
+I (593582) DISCORD: ota_download_handler: Firmware downloading (size=895984 B)...
+I (594922) DISCORD: ota_download_handler: Downloaded 9%
+I (596342) DISCORD: ota_download_handler: Downloaded 18%
+I (597942) DISCORD: ota_download_handler: Downloaded 27%
+I (599792) DISCORD: ota_download_handler: Downloaded 36%
+I (601662) DISCORD: ota_download_handler: Downloaded 45%
+I (603502) DISCORD: ota_download_handler: Downloaded 54%
+I (605702) DISCORD: ota_download_handler: Downloaded 63%
+I (607542) DISCORD: ota_download_handler: Downloaded 72%
+I (609402) DISCORD: ota_download_handler: Downloaded 81%
+I (611272) DISCORD: ota_download_handler: Downloaded 90%
+I (613122) DISCORD: ota_download_handler: Downloaded 99%
+I (613242) DISCORD: ota_download_handler: Downloaded 100%
+I (613242) DISCORD: discord_ota: Validating...
+I (613242) esp_image: segment 0: paddr=00210020 vaddr=3f400020 size=218bch (137404) map
+I (613292) esp_image: segment 1: paddr=002318e4 vaddr=3ffb0000 size=042b0h ( 17072)
+I (613302) esp_image: segment 2: paddr=00235b9c vaddr=40080000 size=0a47ch ( 42108)
+I (613312) esp_image: segment 3: paddr=00240020 vaddr=400d0020 size=9f4d8h (652504) map
+I (613522) esp_image: segment 4: paddr=002df500 vaddr=4008a47c size=0b6cch ( 46796)
+I (613542) DISCORD: discord_ota: Mounting...
+I (613542) esp_image: segment 0: paddr=00210020 vaddr=3f400020 size=218bch (137404) map
+I (613592) esp_image: segment 1: paddr=002318e4 vaddr=3ffb0000 size=042b0h ( 17072)
+I (613592) esp_image: segment 2: paddr=00235b9c vaddr=40080000 size=0a47ch ( 42108)
+I (613612) esp_image: segment 3: paddr=00240020 vaddr=400d0020 size=9f4d8h (652504) map
+I (613822) esp_image: segment 4: paddr=002df500 vaddr=4008a47c size=0b6cch ( 46796)
+I (613862) DISCORD: discord_ota: New firmware mounted. Rebooting...
 ```

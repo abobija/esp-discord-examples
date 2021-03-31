@@ -16,3 +16,6 @@
 [submodule "ota-basic/components/esp-discord"]
 	path = ota-basic/components/esp-discord
 	url = https://github.com/abobija/esp-discord
+[submodule "ota-multiple/components/esp-discord"]
+	path = ota-multiple/components/esp-discord
+	url = https://github.com/abobija/esp-discord

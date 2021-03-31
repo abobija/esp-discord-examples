@@ -1,4 +1,4 @@
-# ESP32 Discord bot download message attachment
+# ESP32 Discord bot OTA update
 
 This is example application which represent [ESP32 Discord bot](https://github.com/abobija/esp-discord) that can perform OTA updates.
 

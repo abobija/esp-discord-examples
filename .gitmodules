@@ -13,6 +13,6 @@
 [submodule "download-attachment/components/esp-discord"]
 	path = download-attachment/components/esp-discord
 	url = https://github.com/abobija/esp-discord
-[submodule "ota/components/esp-discord"]
+[submodule "ota-basic/components/esp-discord"]
 	path = ota-basic/components/esp-discord
 	url = https://github.com/abobija/esp-discord

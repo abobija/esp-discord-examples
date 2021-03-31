@@ -1,4 +1,4 @@
 idf_component_register(
-    SRCS main.c nvs_token_helper.c
+    SRCS main.c
     INCLUDE_DIRS .
 )

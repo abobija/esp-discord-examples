@@ -6,7 +6,6 @@
 #include "nvs_flash.h"
 #include "protocol_examples_common.h"
 
-#include "nvs_token_helper.h"
 #include "discord.h"
 #include "discord/session.h"
 #include "discord/message.h"
@@ -23,8 +22,6 @@ static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t 
         case DISCORD_EVENT_CONNECTED: {
                 discord_session_t* session = (discord_session_t*) data->ptr;
                 discord_session_dump_log(ESP_LOGI, TAG, session);
-                // Token is valid. Save it to nvs
-                save_token_to_nvs();
             }
             break;
         
@@ -33,18 +30,11 @@ static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t 
                 if(!msg->author->bot) {
                     discord_message_dump_log(ESP_LOGI, TAG, msg);
                 }
-                discord_ota(bot, msg, NULL);
             }
             break;
         
         case DISCORD_EVENT_DISCONNECTED:
             ESP_LOGW(TAG, "Bot logged out");
-            discord_close_code_t close_code;
-            discord_get_close_code(bot, &close_code);
-            if(close_code == DISCORD_CLOSEOP_AUTHENTICATION_FAILED) {
-                // Token is invalid. Remove it from nvs
-                remove_token_from_nvs();
-            }
             break;
     }
 }
@@ -57,20 +47,16 @@ void app_main(void) {
     ESP_ERROR_CHECK(esp_event_loop_create_default());
     ESP_ERROR_CHECK(example_connect());
 
-    char* nvs_token = read_token_from_nvs();
-
-    ESP_LOGI(TAG, "Token loaded from %s",
-        nvs_token ? "nvs" : "configuration"
-    );
-
     discord_config_t cfg = {
-        .intents = DISCORD_INTENT_GUILD_MESSAGES,
-        .token = nvs_token ? nvs_token : CONFIG_DISCORD_TOKEN
+        .intents = DISCORD_INTENT_GUILD_MESSAGES
+    };
+
+    discord_ota_config_t ota_cfg = {
+        .multiple_ota = true
     };
 
     bot = discord_create(&cfg);
+    ESP_ERROR_CHECK(discord_ota_init(bot, &ota_cfg));
     ESP_ERROR_CHECK(discord_register_events(bot, DISCORD_EVENT_ANY, bot_event_handler, NULL));
     ESP_ERROR_CHECK(discord_login(bot));
-
-    free(nvs_token);
 }

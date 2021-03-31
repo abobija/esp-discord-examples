@@ -28,7 +28,6 @@ static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t 
         case DISCORD_EVENT_MESSAGE_RECEIVED: {
                 discord_message_t* msg = (discord_message_t*) data->ptr;
                 discord_message_dump_log(ESP_LOGI, TAG, msg);
-                discord_ota(bot, msg, NULL);
             }
             break;
         
@@ -51,6 +50,7 @@ void app_main(void) {
     };
 
     bot = discord_create(&cfg);
+    ESP_ERROR_CHECK(discord_ota_init(bot, NULL));
     ESP_ERROR_CHECK(discord_register_events(bot, DISCORD_EVENT_ANY, bot_event_handler, NULL));
     ESP_ERROR_CHECK(discord_login(bot));
 }

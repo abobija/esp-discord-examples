@@ -14,9 +14,11 @@ static const char* TAG = "discord_bot";
 
 static discord_handle_t bot;
 
-static void download_handler(discord_download_info_t* file) {
+static esp_err_t download_handler(discord_download_info_t* file, void* arg) {
     ESP_LOGI(TAG, "downloaded %d [%d/%d]", file->length, file->offset + file->length, file->total_length);
     ESP_LOGI(TAG, "Data: [%.*s]", file->length, (const char*) file->data);
+
+    return ESP_OK;
 }
 
 static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t event_id, void* event_data) {
@@ -61,7 +63,7 @@ static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t 
 
                     // message can contain more than one attachment
                     // but here we gonna to download only first one (index 0)
-                    if(discord_message_download_attachment(bot, msg, 0, &download_handler) == ESP_OK) {
+                    if(discord_message_download_attachment(bot, msg, 0, &download_handler, NULL) == ESP_OK) {
                         ESP_LOGI(TAG, "Attachment has been successfully downloaded");
                     } else {
                         ESP_LOGE(TAG, "Fail to download attachment");

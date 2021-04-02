@@ -18,6 +18,10 @@ This is example application which represent [ESP32 Discord bot](https://github.c
 
 For more examples please visit [esp-discord-examples](https://github.com/abobija/esp-discord-examples) repository or check out official [esp-discord](https://github.com/abobija/esp-discord) component repository.
 
+## Demonstration video
+
+[![Easy ESP32 OTA Update/Flash over WiFi using Discord](https://img.youtube.com/vi/u8uhCy-IJwM/mqdefault.jpg)](https://www.youtube.com/watch?v=u8uhCy-IJwM)
+
 ## Demo
 
 ![Chat](docs/chat.png)

@@ -91,7 +91,7 @@ void app_main(void) {
     ESP_ERROR_CHECK(example_connect());
 
     discord_config_t cfg = {
-        .intents = DISCORD_INTENT_GUILD_MESSAGES | DISCORD_INTENT_GUILD_MESSAGE_REACTIONS
+        .intents = DISCORD_INTENT_GUILD_MESSAGES | DISCORD_INTENT_MESSAGE_CONTENT
     };
 
     bot = discord_create(&cfg);

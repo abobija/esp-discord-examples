@@ -4,7 +4,6 @@ This is example application which represent echo [ESP32 Discord bot](https://git
 
 ## Configuration steps:
 
-- Run `./components/esp-discord/certgen.sh` to generate discord certificates
 - Run `idf.py set-target esp32`
 - Open `idf.py menuconfig` and set next configs:
   - `Example Connection Configuration`

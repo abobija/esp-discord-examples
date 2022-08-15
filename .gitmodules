@@ -28,3 +28,6 @@
 [submodule "embeds/components/esp-discord"]
 	path = embeds/components/esp-discord
 	url = https://github.com/abobija/esp-discord
+[submodule "embeds-with-attachment-reference/components/esp-discord"]
+	path = embeds-with-attachment-reference/components/esp-discord
+	url = https://github.com/abobija/esp-discord

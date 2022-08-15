@@ -25,3 +25,6 @@
 [submodule "upload-attachment/components/esp-discord"]
 	path = upload-attachment/components/esp-discord
 	url = https://github.com/abobija/esp-discord
+[submodule "embeds/components/esp-discord"]
+	path = embeds/components/esp-discord
+	url = https://github.com/abobija/esp-discord

@@ -22,3 +22,6 @@
 [submodule "voice_state/components/esp-discord"]
 	path = voice_state/components/esp-discord
 	url = https://github.com/abobija/esp-discord
+[submodule "upload-attachment/components/esp-discord"]
+	path = upload-attachment/components/esp-discord
+	url = https://github.com/abobija/esp-discord

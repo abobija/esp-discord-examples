@@ -44,7 +44,7 @@ static void bot_event_handler(void* handler_arg, esp_event_base_t base, int32_t 
                 discord_attachment_t* rickroll = cu_ctor(discord_attachment_t,
                     .content_type = strdup("image/jpeg"),
                     .filename     = strdup("rickroll.jpg"),
-                    ._data        = (uint8_t*) rickroll_start,
+                    ._data        = (char*) rickroll_start,
                     .size         = rickroll_end - rickroll_start,
                 );
 

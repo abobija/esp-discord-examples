@@ -25,7 +25,7 @@ Every example has `README.md` file. Open that file and read building instruction
 ## Development update
 
 ```
-git pull && git submodule foreach --recursive 'folder=$(basename "$PWD"); if [ "$folder" = "esp-discord" ]; then git checkout main && git pull; fi'
+git pull && git submodule foreach --recursive 'folder=$(basename "$PWD"); if [ "$folder" = "esp-discord" ]; then git pull origin main; fi'
 ```
 
 ## Author

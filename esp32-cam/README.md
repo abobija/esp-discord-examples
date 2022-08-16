@@ -14,6 +14,10 @@ This is example of [ESP32 Discord bot](https://github.com/abobija/esp-discord) t
 
 For more examples please visit [esp-discord-examples](https://github.com/abobija/esp-discord-examples) repository or check out official [esp-discord](https://github.com/abobija/esp-discord) component repository.
 
+## Demonstration video
+
+[![Bot that takes photos](https://img.youtube.com/vi/SvkVaCF63FY/mqdefault.jpg)](https://www.youtube.com/watch?v=SvkVaCF63FY)
+
 ## Demo
 
 ![Bot sends camera image](docs/chat.png)

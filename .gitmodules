@@ -34,3 +34,9 @@
 [submodule "discord-rfid"]
 	path = discord-rfid
 	url = https://github.com/abobija/discord-rfid
+[submodule "esp32-cam/components/esp-discord"]
+	path = esp32-cam/components/esp-discord
+	url = https://github.com/abobija/esp-discord
+[submodule "esp32-cam/components/esp32-camera"]
+	path = esp32-cam/components/esp32-camera
+	url = https://github.com/espressif/esp32-camera

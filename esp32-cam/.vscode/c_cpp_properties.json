@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${env:IDF_PATH}/components/**",
+                "${workspaceFolder}/main/**",
+                "${workspaceFolder}/components/**",
+                "${workspaceFolder}/build/config/*",
+                "${env:IDF_PATH}/examples/common_components/protocol_examples_common/**"
+            ],
+            "browse": {
+                "path": [
+                    "${env:IDF_PATH}/components",
+                    "${workspaceFolder}/main",
+                    "${workspaceFolder}/components",
+                    "${workspaceFolder}/build/config",
+                    "${env:IDF_PATH}/examples/common_components/protocol_examples_common"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "compilerPath": "xtensa-esp32-elf-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
